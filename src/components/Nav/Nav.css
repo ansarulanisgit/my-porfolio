@@ -1,0 +1,81 @@
+nav{
+    background-color: rgba(0, 0, 0, 0.6);
+    width: max-content;
+    padding: 0.7rem 1.7rem;
+    position: fixed;
+    z-index: 100;
+    left: 50%;
+    bottom: 1rem;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 1.7rem;
+    font-size: 1.5rem;
+    border-radius: 4rem;
+
+}
+
+nav a.active{
+    color: #ffffff;
+}
+
+
+/*=============== Navbar tootips styles ===============*/
+.tooltip {
+    display:inline-block;
+    position:relative;
+    text-align:center;
+    z-index: 100;
+}
+
+.tooltip .top {
+    min-width:100px; 
+    max-width:200px;
+    top:-20px;
+    left:50%;
+    transform:translate(-50%, -100%);
+    padding:5px 10px;
+    color:#FFFFFF;
+    background-color:var(--primary-variant);
+    font-weight:normal;
+    font-size:13px;
+    border-radius:8px;
+    position:absolute;
+    z-index:99999999;
+    box-sizing:border-box;
+    visibility:hidden; opacity:0; transition:opacity 0.8s;
+}
+
+.tooltip:hover .top {
+    visibility:visible; opacity:1;
+}
+
+.tooltip .top i {
+    position:absolute;
+    top:100%;
+    left:50%;
+    margin-left:-12px;
+    width:24px;
+    height:12px;
+    overflow:hidden;
+}
+
+.tooltip .top i::after {
+    content:'';
+    position:absolute;
+    width:12px;
+    height:12px;
+    left:50%;
+    transform:translate(-50%,-50%) rotate(45deg);
+    background-color:var(--primary-variant);
+}
+/*=============== Navbar tootips styles ===============*/
+
+/* =============== Media queries ================== */
+
+@media screen and (max-width: 400px) {
+    nav{
+        gap: 1.4rem;
+        font-size: 1.2rem;
+    
+    }
+  }

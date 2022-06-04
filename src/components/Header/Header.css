@@ -68,7 +68,6 @@ header{
     position:relative;
     text-align:left;
 }
-
 .tooltip .right {
     min-width:120px; 
     max-width:200px;
@@ -76,21 +75,20 @@ header{
     left:100%;
     margin-left:20px;
     transform:translate(0, -50%);
-    padding:10px 20px;
+    padding:5px 10px;
     color:#FFFFFF;
-    background-color: var(--primary-color);
+    background-color:var(--primary-variant);
     font-weight:normal;
     font-size:13px;
     border-radius:8px;
     position:absolute;
-    z-index:99999999;
+    z-index: 99999999;
     box-sizing:border-box;
-    box-shadow:0 1px 8px rgba(0,0,0,0.5);
-    display:none;
+    visibility:hidden; opacity:0; transition:opacity 0.8s;
 }
 
 .tooltip:hover .right {
-    display:block;
+    visibility:visible; opacity:1;
 }
 
 .tooltip .right i {
@@ -111,7 +109,7 @@ header{
     left:0;
     top:50%;
     transform:translate(50%,-50%) rotate(-45deg);
-    background-color: var(--primary-color);
+    background-color: var(--primary-variant);
     box-shadow:0 1px 8px rgba(0,0,0,0.5);
 }
 /*=================== Tooltip Styles ===================*/
@@ -149,7 +147,7 @@ header{
 
 .scroll-down:hover {
     color: var(--color-white);
-    transform: rotate(90deg) scale(1.10);
+    transform: rotate(90deg) scale(1.05);
 }
 
 

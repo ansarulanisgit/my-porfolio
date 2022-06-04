@@ -6,8 +6,8 @@ import { SiMinutemailer } from 'react-icons/si';
 const CallToAction = () => {
     return (
         <div className='call-to-action'>
-            <a className='btn' href={resume} download>Resume <BsFillFileEarmarkArrowDownFill/></a>
-            <a className='btn btn-primary' href={resume}>Contact Me <BsBoxArrowInUpRight/></a>
+            <a className='btn' href={resume} download>My Resume <BsFillFileEarmarkArrowDownFill/></a>
+            <a className='btn btn-primary' href='/#contact'>Contact Me <BsBoxArrowInUpRight/></a>
         </div>
     );
 };
