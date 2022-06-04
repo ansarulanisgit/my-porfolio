@@ -11,7 +11,7 @@
 }
 
 :root{
-  --bg-color: #1f1f38;
+  --bg-primary: #1f1f38;
   --bg-variant: #2c2c6c;
   --primary-color: #4db5ff;
   --primary-variant: rgba(77, 181, 255, 0.4);
@@ -21,6 +21,8 @@
   --container-lg: 75%;
   --container-md: 86%;
   --container-sm: 90%;
+
+  --transition: all 500ms ease;
 }
 
 html{
@@ -33,4 +35,104 @@ html{
 
 body{
   font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-primary);
+  background: url(./assets/bg2.avif) no-repeat center center fixed;
+  background-size: cover;
+  color: var(--color-white);
+  line-height: 1.7;  
+}
+
+/* Global General styles */
+.container{
+  width: var(--container-lg);
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-weight: 500;
+}
+
+h1{
+  font-size: 2.5rem;
+}
+
+section{
+  margin-top: 8rem;
+}
+
+section > h2{
+  text-align: center;
+  color: var(--bg-primary);
+  margin-bottom: 2.5rem;
+}
+
+section > h5{
+  text-align: center;
+  color: var(--color-light);
+}
+
+.text-light{
+  color: var(--color-light)
+}
+
+a{
+  color: var(--primary-color);
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+a:hover{
+  color: var(--color-white)
+}
+
+
+.btn {
+  width: max-content;
+  display: inline-block;
+  color: var(--primary-color);
+  padding: 0.50rem 1.0rem;
+  margin: 2px;
+  border: 1px solid var(--primary-color);
+  border-radius: 0.4rem;
+  transition: var(--transition);
+}
+
+.btn:hover{
+  background-color: var(--color-white);
+  color: var(--bg-primary);
+  border-color: transparent;
+}
+
+.btn-primary{
+  background-color: var(--primary-color);
+  color: var(--bg-primary)
+}
+
+img{
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* =============== Media queries ================== */
+
+@media screen and (max-width: 1024px) {
+  .container{
+    width: var(--container-md);
+  }
+
+  section{
+    margin-top: 6rem;
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+  .container{
+    width: var(--container-sm);
+  }
+
+  section > h2{
+    margin-bottom: 2rem;
+  }
 }

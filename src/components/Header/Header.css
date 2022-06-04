@@ -1,0 +1,180 @@
+header{
+    height: 100vh;
+    padding-top: 2rem;
+    overflow: hidden;
+}
+
+.header{
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+.logo{
+    width: 5rem;
+    padding-bottom: 1rem;
+    margin: auto;
+}
+
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+/*=============== Call to action styles =================== */
+
+.call-to-action{
+    margin-top: 2rem;
+    display: flex;
+    gap: 0.8rem;
+    justify-content: center;
+}
+
+/* =================== Social Styles ==================  */
+
+.header-socials{
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+}
+
+
+
+.header-socials::after{
+    content: '';
+    width: 2px;
+    height: 3rem;
+    background-color: var(--primary-color);
+}
+
+
+/*=================== Tooltip Styles ===================*/
+.tooltip {
+    display:inline-block;
+    position:relative;
+    text-align:left;
+}
+
+.tooltip .right {
+    min-width:120px; 
+    max-width:200px;
+    top:50%;
+    left:100%;
+    margin-left:20px;
+    transform:translate(0, -50%);
+    padding:10px 20px;
+    color:#FFFFFF;
+    background-color: var(--primary-color);
+    font-weight:normal;
+    font-size:13px;
+    border-radius:8px;
+    position:absolute;
+    z-index:99999999;
+    box-sizing:border-box;
+    box-shadow:0 1px 8px rgba(0,0,0,0.5);
+    display:none;
+}
+
+.tooltip:hover .right {
+    display:block;
+}
+
+.tooltip .right i {
+    position:absolute;
+    top:50%;
+    right:100%;
+    margin-top:-12px;
+    width:12px;
+    height:24px;
+    overflow:hidden;
+}
+
+.tooltip .right i::after {
+    content:'';
+    position:absolute;
+    width:12px;
+    height:12px;
+    left:0;
+    top:50%;
+    transform:translate(50%,-50%) rotate(-45deg);
+    background-color: var(--primary-color);
+    box-shadow:0 1px 8px rgba(0,0,0,0.5);
+}
+/*=================== Tooltip Styles ===================*/
+
+/*============= Header image style ============= */
+
+.profile-photo{
+    width: 15rem;
+    height: 30rem;
+    margin: auto;
+    text-align: center;
+}
+
+.profile-photo img{
+    max-width: 100%;
+    border-radius: 10rem 10rem 0 0;
+    margin-top: 2rem;
+    overflow: hidden;
+}
+
+/*============== Scroll Down styles =============*/
+.scroll-down{
+    position: absolute;
+    right: -3.2rem;
+    bottom: 5.5rem;
+    transform: rotate(90deg);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: var(--primary-color);
+    transition: all 600ms ease;
+}
+
+.scroll-down:hover {
+    color: var(--color-white);
+    transform: rotate(90deg) scale(1.10);
+}
+
+
+
+/* =============== Media queries ================== */
+
+@media screen and (max-width: 1024px) {
+    header{
+        height: 100vh;
+        padding-top: 3rem;
+        overflow: hidden;
+    }
+    .call-to-action{
+        margin-top: 1rem;
+    }
+    .header-socials{        
+        bottom: 2rem;
+    }
+    .profile-photo{
+        width: 12rem;
+    }
+  }
+  
+  
+  @media screen and (max-width: 1024px) {
+    
+  }
+  
