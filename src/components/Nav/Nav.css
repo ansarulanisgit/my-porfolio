@@ -5,7 +5,7 @@ nav{
     position: fixed;
     z-index: 100;
     left: 50%;
-    bottom: 1rem;
+    bottom: 0.8rem;
     transform: translateX(-50%);
     display: flex;
     gap: 1.7rem;

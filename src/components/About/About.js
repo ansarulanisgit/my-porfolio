@@ -9,6 +9,7 @@ const About = () => {
         <section id='about'>
             <h4>Who am I?</h4>
             <h2>About Me</h2>
+            <div className="divider"></div>
             <div className="container about">
                 <div className="about-img">
                     <img src={aboutImg} alt="" />

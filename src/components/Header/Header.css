@@ -118,7 +118,6 @@ header{
 
 .profile-photo{
     width: 15rem;
-    height: 30rem;
     margin: auto;
     text-align: center;
 }
@@ -172,7 +171,15 @@ header{
   }
   
   
-  @media screen and (max-width: 1024px) {
-    
+  @media screen and (max-width: 500px) {
+    .header-socials{        
+        display: none;
+    }
+    .scroll-down{
+       display: none;
+    }
+    header{
+        height: max-content;
+    }
   }
   

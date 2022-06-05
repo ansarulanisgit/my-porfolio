@@ -8,6 +8,7 @@ import { TbMessageCircle } from 'react-icons/tb';
 
 const Nav = () => {
     const [activeNav, setActiveNav] = useState('#');
+    const user = '';
     return (
         <div>
             <nav>
@@ -53,13 +54,15 @@ const Nav = () => {
                         <i></i>
                     </div>
                 </div>
-                <div class="tooltip">
+                {
+                    user && <div class="tooltip">
                     <a onClick={() => setActiveNav("#dashboard")} className={activeNav === '#dashboard'? 'active' : ''} href="#contact"><MdOutlineDashboardCustomize/></a>
                     <div class="top">
                         <h3>Dashboard</h3>                        
                         <i></i>
                     </div>
                 </div>
+                }
             </nav>
         </div>
     );

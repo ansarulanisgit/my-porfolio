@@ -1,0 +1,44 @@
+.testimonials{
+    margin: 3rem auto 0;
+    width: 50%;
+}
+
+.testimonial{   
+    margin: auto;
+    text-align: center;
+    background-color: var(--bg-variant-light);
+    padding: 3rem 3rem;
+    border-radius: 2rem;
+    transition: var(--transition);
+}
+
+.testimonial img{
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.testimonial h3{
+    margin: 0.5rem 0;
+    color: var(--primary-color);
+}
+
+.testimonial small{
+    color: var(--color-light);
+    display: block;
+}
+
+/*==================== Media queries ====================*/
+@media screen and (max-width: 700px) {
+    
+    .testimonials{
+        margin: 2rem auto 0;
+        width: 90%;
+    }
+    .testimonial{   
+        padding: 2rem 1.5rem;
+    }
+    
+  }
