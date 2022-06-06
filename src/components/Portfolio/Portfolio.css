@@ -4,7 +4,7 @@
     gap: 1.5rem;
 }
 .portfolio-item{
-    background: var(--bg-variant);
+    background: var(--bg-variant-light);
     padding: 1.3rem;
     border-radius: 1rem;
     transition: var(--transition);

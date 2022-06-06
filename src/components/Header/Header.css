@@ -9,9 +9,12 @@ header{
     height: 100%;
     position: relative;
 }
+.header h4{
+    font-size: 1rem;
+}
 .logo{
     width: 5rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
     margin: auto;
 }
 
@@ -33,7 +36,7 @@ header{
 /*=============== Call to action styles =================== */
 
 .call-to-action{
-    margin-top: 2rem;
+    margin-top: 1rem;
     display: flex;
     gap: 0.8rem;
     justify-content: center;
@@ -49,7 +52,7 @@ header{
     gap: 0.4rem;
     position: absolute;
     left: 0;
-    bottom: 3rem;
+    bottom: 2.5rem;
 }
 
 
@@ -125,7 +128,7 @@ header{
 .profile-photo img{
     max-width: 100%;
     border-radius: 10rem 10rem 0 0;
-    margin-top: 2rem;
+    margin-top: 1rem;
     overflow: hidden;
 }
 

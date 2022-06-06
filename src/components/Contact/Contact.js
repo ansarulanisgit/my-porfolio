@@ -4,8 +4,7 @@ import { MdOutlineMarkEmailUnread } from 'react-icons/md';
 import { RiMessengerLine } from 'react-icons/ri';
 import { FaWhatsapp } from 'react-icons/fa';
 import emailjs from 'emailjs-com';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import {toast } from 'react-toastify';
 
 const Contact = () => {
     const form = useRef();
@@ -61,7 +60,6 @@ const Contact = () => {
                         <textarea name="message"  rows="10" placeholder='Your message' required></textarea>
                         <input type="submit" value="Send Message" className='btn btn-primary'/>
                     </form>
-                    <ToastContainer/>
                 </div>
             </div>
         </section>
